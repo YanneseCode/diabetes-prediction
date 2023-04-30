@@ -30,11 +30,11 @@ def main():
 
 
 # load the train model
-with open('diabetesModel1', 'rb') as rf:
+with open('diabetesModel1.pickle', 'rb') as rf:
     model = pickle.load(rf)
 
 # load the StandardScaler
-with open('scalers', 'rb') as stds:
+with open('scaler.pickle', 'rb') as stds:
     scaler = pickle.load(stds)
 
 def predict(Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,

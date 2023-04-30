@@ -30,7 +30,7 @@ def main():
 
 
 # load the train model
-with open('diabetesModel1.pickle', 'rb') as rf:
+with open('diabetesModel3.pickle', 'rb') as rf:
     model = pickle.load(rf)
 
 # load the StandardScaler

@@ -47,8 +47,8 @@ def predict(Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
     scaler.transform(df)
     # making predictions using the train model
     prediction = model.predict(df)
-    #result = int(prediction)
-    return prediction
+    result = int(prediction)
+    return result
 
 
 

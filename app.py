@@ -23,7 +23,7 @@ def main():
         # make prediction
         result = predict(Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
                          BMI, DiabetesPedigreeFunction, Age)
-        st.success(f'The diabetic outcome for the patient is ${result}')
+        st.success(f'The diabetic outcome for the patient is {result}')
 
 
 

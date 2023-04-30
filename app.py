@@ -9,10 +9,10 @@ def main():
        </div>"""
     st.markdown(style, unsafe_allow_html=True)
     left, right = st.columns((2,2))
-    Pregnancies = left.number_input('Enter pregnancy count of the patient', step =1.0,format="%.2f", value=0)
+    Pregnancies = left.number_input('Enter pregnancy count of the patient', step =1.0,format="%.1f", value=0.0)
     Glucose = right.number_input('Enter glucose level of the patient',  step=1.0, format='%.2f', value= 80.00)
-    BloodPressure = left.number_input('Enter your blood pressure (mmHg)', step=1.0, format='%.1f', value=66.0)
-    SkinThickness = right.number_input('Enter the Skin Thickness of the patient (mm)', step=1.0, format='%.1f', value=23.0)
+    BloodPressure = left.number_input('Enter your blood pressure (mmHg)', step=1.0, format='%.2f', value=66.00)
+    SkinThickness = right.number_input('Enter the Skin Thickness of the patient (mm)', step=1.0, format='%.2f', value=23.00)
     Insulin = left.number_input('Enter insulin level of the patient', step=1.0, format='%.1f', value=0.0)
     BMI = right.number_input('Enter BMI score of the patient', step=1.0, format='%.1f', value=28.0)
     Age = left.number_input('What is the current age for the patient',  step=1.0, format='%.1f', value=43.0)
